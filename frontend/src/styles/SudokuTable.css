@@ -1,0 +1,102 @@
+/* SudokuTable.css */
+
+.sudoku-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.sudoku-table {
+  border-collapse: collapse;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  font-size: 32px;
+  border: 1px solid #dee2e6;
+}
+
+.cell:focus {
+  outline: none;
+  border: 2px solid #007bff;
+}
+
+.cell.readonly {
+  background-color: #f8f9fa;
+  cursor: auto;
+  color: #6c757d; /* Cor do texto para células readOnly */
+}
+
+.bottom-right {
+  border-bottom-width: 2px;
+  border-right-width: 2px;
+}
+
+tr:last-child .cell {
+  border-bottom: 2px solid #dee2e6;
+}
+
+td:last-child .cell {
+  border-right: 2px solid #dee2e6;
+}
+
+/* Estilo para células predefinidas */
+.cell.default {
+  background-color: #e9ecef; /* Cor de fundo para células com valores padrões */
+  color: #495057; /* Cor do texto para células com valores padrões */
+}
+
+.end-message {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.end-message.show {
+  display: flex;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.stats {
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.stats p{
+  margin: 10px;
+}
+
+button {
+  background-color: rgb(8, 102, 255);
+  margin: 10px;
+  color: #fff;
+  border: none;
+  padding: 13px;
+  border-radius: 5px;
+  width: 50%;
+  font-size: 20px;
+  cursor: pointer;
+}

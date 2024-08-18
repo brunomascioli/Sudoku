@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+#root {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.window {
+  display: flex;
+  height: 80%;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-form {
+  display: flex;
+  flex-direction: column; /* Alinha os elementos do formulário verticalmente */
+  justify-content: center; /* Centraliza os elementos verticalmente */
+  align-items: center; /* Centraliza os elementos horizontalmente */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form-button {
+  background-color: rgb(8, 102, 255);
+  color: #fff;
+  border: none;
+  padding: 13px;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.password-input, .username-input {
+  border: 1px solid rgba(189, 188, 188, 0.863);
+  font-size: larger;
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;  /* Ajuste para garantir espaço em telas menores */
+  border-radius: 5px;
+  box-sizing: border-box;  /* Garante que padding seja incluído na largura total */
+}
